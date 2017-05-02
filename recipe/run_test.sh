@@ -1,7 +1,7 @@
 #! /bin/bash
 
 git clone https://github.com/mcflugen/hydrotrend
-cd hydrotrend && git checkout add-bmi-metadata
+cd hydrotrend && git checkout master
 
 prefix=$(python -c 'import sys; print sys.prefix')
 mkdir _build && pushd _build
