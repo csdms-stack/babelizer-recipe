@@ -15,6 +15,7 @@ requirements:
     - setuptools
     - pyyaml
     - nose
+    - cca-babel <2
     - cca-bocca
     - pexpect
     - conda-build
@@ -24,6 +25,7 @@ requirements:
     - setuptools
     - pyyaml
     - nose
+    - cca-babel <2
     - cca-bocca
     - pkg-config [osx]
     - pexpect
@@ -49,7 +51,7 @@ about:
   summary: Generate BMI language bindings with babel.
 
 build:
-  number: 0
+  number: 1
   script: python setup.py install --single-version-externally-managed --record record.txt
   entry_points:
     - bmi-find=bmibabel.cmd.bmi_find:main
