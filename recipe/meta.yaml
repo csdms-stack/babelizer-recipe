@@ -1,5 +1,5 @@
 {% set name = "bmi-babel" %}
-{% set version = "0.1.0" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   git_url: https://github.com/bmi-forum/babelizer
-
+  git_rev: v{{ version }}
 
 requirements:
   build:
