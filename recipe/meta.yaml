@@ -1,4 +1,4 @@
-{% set name = "bmi-babel" %}
+{% set name = "babelizer" %}
 {% set version = "0.2.0" %}
 
 package:
@@ -48,11 +48,8 @@ test:
     - matplotlib
     - pymt
 
-about:
-  summary: Generate BMI language bindings with babel.
-
 build:
-  number: 1
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
   entry_points:
     - bmi-find=bmibabel.cmd.bmi_find:main
