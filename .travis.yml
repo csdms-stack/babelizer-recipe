@@ -1,5 +1,6 @@
 language: generic
 os:
+- linux
 - osx
 env:
   global:
@@ -32,6 +33,5 @@ install:
 script:
 - conda build ./recipe -c csdms-stack -c conda-forge --old-build-string
 after_success:
-- curl https://raw.githubusercontent.com/csdms/ci-tools/master/anaconda_upload.py
-  > $HOME/anaconda_upload.py
+- curl https://raw.githubusercontent.com/csdms/ci-tools/master/anaconda_upload.py > $HOME/anaconda_upload.py
 - echo $ANACONDA_TOKEN | python $HOME/anaconda_upload.py ./recipe --channel=main --org=csdms-stack --old-build-string --token=-
