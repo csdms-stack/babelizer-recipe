@@ -45,6 +45,7 @@ test:
     - bmi -h
   requires:
     - cmake
+    - matplotlib
     - pymt
 
 about:
