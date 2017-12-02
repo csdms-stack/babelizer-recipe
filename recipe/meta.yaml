@@ -11,24 +11,12 @@ source:
 
 requirements:
   build:
-    - python
-    - setuptools
-    - pyyaml
-    - nose
     - cca-babel <2
     - cca-bocca
-    - pexpect
 
   run:
-    - python
-    - setuptools
-    - pyyaml
-    - nose
     - cca-babel <2
     - cca-bocca
-    - pkg-config [osx]
-    - pexpect
-    - scripting
 
 test:
   imports:
