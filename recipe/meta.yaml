@@ -11,26 +11,12 @@ source:
 
 requirements:
   build:
-    - python
-    - setuptools
-    - pyyaml
-    - nose
     - cca-babel <2
     - cca-bocca
-    - pexpect
-    - conda-build
 
   run:
-    - python
-    - setuptools
-    - pyyaml
-    - nose
     - cca-babel <2
     - cca-bocca
-    - pkg-config [osx]
-    - pexpect
-    - scripting
-    - conda-build
 
 test:
   imports:
@@ -45,11 +31,12 @@ test:
     - bmi -h
   requires:
     - cmake
+    - conda-build
     - matplotlib
     - pymt
 
 build:
-  number: 0
+  number: 1
   script: python setup.py install --single-version-externally-managed --record record.txt
   entry_points:
     - bmi-find=bmibabel.cmd.bmi_find:main
