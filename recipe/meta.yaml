@@ -17,6 +17,8 @@ requirements:
   run:
     - cca-babel <2
     - cca-bocca
+    - conda-build
+    - scripting
 
 test:
   imports:
@@ -31,7 +33,6 @@ test:
     - bmi -h
   requires:
     - cmake
-    - conda-build
     - matplotlib
     - pymt
 
