@@ -1,5 +1,7 @@
 #! /bin/bash
 
+export MPLBACKEND="Agg"
+
 git clone https://github.com/mcflugen/hydrotrend
 cd hydrotrend && git checkout master
 
