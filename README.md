@@ -1,3 +1,7 @@
+This repository has been archived.
+The *babelizer* is now [built](https://github.com/conda-forge/babelizer-feedstock) on conda-forge.
+
+```
 # Current Build Status
 
 Linux, OSX: [![Build Status](https://travis-ci.org/csdms-stack/babelizer-recipe.svg?branch=master)](https://travis-ci.org/csdms-stack/babelizer-recipe)
@@ -36,3 +40,4 @@ $ conda search babelizer --channel csdms-stack
 
 Version: [![Anaconda-Server Badge](https://anaconda.org/csdms-stack/babelizer/badges/version.svg)](https://anaconda.org/csdms-stack/babelizer)
 Downloads: [![Anaconda-Server Badge](https://anaconda.org/csdms-stack/babelizer/badges/downloads.svg)](https://anaconda.org/csdms-stack/babelizer)
+```
